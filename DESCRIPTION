@@ -1,0 +1,14 @@
+Package: TwittR
+Type: Package
+Title: Generate Analytics For Twitter User
+Version: 0.1.0
+Author: Bella White and Nathan Lee
+Maintainer: The package maintainer <bwhite17@calpoly.edu>
+Description: Generate analytics from Twitter API user timeline.
+    Intended for use in conjuction with Twittr Shiny app. 
+License: What license is it under?
+Depends: 
+    tidyverse,
+    lubridate
+Encoding: UTF-8
+LazyData: true
