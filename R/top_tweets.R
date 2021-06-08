@@ -27,8 +27,7 @@ top_tweets_interval <- function(data, num_tweets, time_start, time_end){
 # top_tweets_since_today
 #
 #
-#' @import tidyverse
-#' @import lubridate
+#' @import tidyverse#' @import lubridate
 #' @param data Twitter API User Timeline  data frame
 #' @param num_tweets how many tweets to include (ex: top 10 tweets)
 #' @param n_days tweets from the past n_days
@@ -37,7 +36,7 @@ top_tweets_interval <- function(data, num_tweets, time_start, time_end){
 #' @export
 
 top_tweets_since_today <- function(data, num_tweets, n_days){
-  time_frame <- interval(time_end - n_days, time_end)
+  time_frame <- interval(today() - n_days, today())
   top_x_tweets <- data %>%
     filter(created_at %within% time_frame) %>%
     mutate(success_score = retweet_count + favorite_count) %>%
