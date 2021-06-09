@@ -20,7 +20,7 @@ top_tweets_interval <- function(data, num_tweets, time_start, time_end){
     arrange(desc(success_score))
 
 
-  return(top_x_tweets)
+  return(head(top_x_tweets, num_tweets))
 }
 
 
@@ -43,5 +43,5 @@ top_tweets_since_today <- function(data, num_tweets, n_days){
     arrange(desc(success_score))
 
 
-  return(top_x_tweets)
+  return(head(top_x_tweets, num_tweets))
 }
