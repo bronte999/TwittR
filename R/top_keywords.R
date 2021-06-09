@@ -10,7 +10,7 @@
 #' @export
 
 
-top_keywords_all_time <- function(data, num_words){
+top_keywords_all <- function(data, num_words){
   keywords <- data %>%
     mutate(
       text = str_to_lower(text),
@@ -21,6 +21,7 @@ top_keywords_all_time <- function(data, num_words){
     unnest_tokens(word, text) %>%
     anti_join(stop_words) %>%
     count(word, sort=TRUE)
+
   return(head(keywords,10))
 }
 
