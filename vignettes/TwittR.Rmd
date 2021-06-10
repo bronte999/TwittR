@@ -1,0 +1,23 @@
+---
+title: "TwittR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{TwittR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# The purpose of this package is to provide statistical analysis for twitter user timelines. It generates dataframes and statistical models to convey more information about a user and their post behaviors.
+
+```{r setup}
+library(TwittR)
+
+
+```
