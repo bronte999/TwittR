@@ -9,6 +9,8 @@ Description: Generate analytics from Twitter API user timeline.
 License: What license is it under?
 Depends: 
     tidyverse,
-    lubridate
+    lubridate,
+    tidytext,
+    sentimentr
 Encoding: UTF-8
 LazyData: true
